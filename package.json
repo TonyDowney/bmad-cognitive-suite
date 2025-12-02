@@ -1,0 +1,85 @@
+{
+  "name": "bmad-cognitive-suite",
+  "version": "0.1.0-alpha.1",
+  "description": "Tools for Thought - Cognitive protection agents for BMAD Method. Based on Advait Sarkar's research on preserving human cognition in AI-assisted workflows.",
+  "author": "Tony",
+  "license": "MIT",
+  "keywords": [
+    "bmad",
+    "bmad-module",
+    "cognitive",
+    "tools-for-thought",
+    "metacognition",
+    "critical-thinking",
+    "ai-ethics",
+    "human-ai-interaction"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/bmad-cognitive-suite"
+  },
+  "bmad": {
+    "module": true,
+    "type": "extension",
+    "compatible": "^6.0.0-alpha",
+    "installPath": ".bmad/cognitive",
+    "provides": {
+      "agents": {
+        "simple": [
+          "devils-advocate",
+          "assumption-auditor",
+          "complexity-restorer",
+          "pre-engagement-gate"
+        ],
+        "expert": [
+          "socratic-challenger",
+          "memory-anchor",
+          "decision-journal",
+          "thought-provenance"
+        ],
+        "module": [
+          "provocation-injector",
+          "metacognitive-pause"
+        ]
+      },
+      "workflows": [
+        "thoughtful-review",
+        "divergence-convergence",
+        "cognitive-checkpoint"
+      ],
+      "composables": [
+        "provocation-hooks",
+        "engagement-gates",
+        "learning-checks"
+      ]
+    },
+    "philosophy": {
+      "source": "Advait Sarkar - TEDAI Vienna 2025",
+      "principles": [
+        "Material Engagement: Preserve direct work with materials",
+        "Productive Resistance: AI should challenge, not obey",
+        "Metacognition Scaffolding: Help think about thinking",
+        "Provocations over Completions: Offer alternatives, not answers",
+        "Memory as User Responsibility: Track what user learned, not what AI said"
+      ]
+    }
+  },
+  "bin": {
+    "bmad-cognitive": "./bin/cli.js"
+  },
+  "scripts": {
+    "install-module": "node ./scripts/install.js",
+    "validate": "node ./scripts/validate.js",
+    "test": "echo \"Tests not yet implemented\" && exit 0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "src/",
+    "bin/",
+    "scripts/",
+    "docs/",
+    "README.md"
+  ]
+}
