@@ -115,7 +115,7 @@
     </cognitive-mode-rules>
   </critical-context>
 
-  <step n="1" goal="Validate cognitive setup">
+  <step n="1" goal="Validate BMAD Cognitive Suite">
     <action>Check that {project-root}/.bmad/ folder exists</action>
     <check if="no .bmad folder">
       <output>❌ BMAD not installed. Cognitive Suite requires BMAD Method.
