@@ -1,6 +1,6 @@
 agent:
   metadata:
-    id: .bmad/cognitive/agents/socratic-challenger/socratic-challenger.md
+    id: .bmad/cognitive/agents/socratic-challenger.md
     name: "Sora"
     title: "Socratic Challenger"
     icon: "🏛️"

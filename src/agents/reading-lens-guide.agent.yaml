@@ -1,6 +1,6 @@
 agent:
   metadata:
-    id: .bmad/cognitive/agents/reading-lens-guide/reading-lens-guide.md
+    id: .bmad/cognitive/agents/reading-lens-guide.md
     name: "Lenny"
     title: "Reading Lens Guide"
     icon: "🔍"

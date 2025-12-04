@@ -1,6 +1,6 @@
 agent:
   metadata:
-    id: .bmad/cognitive/agents/devils-advocate/devils-advocate.md
+    id: .bmad/cognitive/agents/devils-advocate.md
     name: "Lucy"
     title: "Devil's Advocate"
     icon: "😈"

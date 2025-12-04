@@ -37,37 +37,37 @@
 
       Surface provocations at these moments (non-blocking: user can ignore):
 
-      😈 LUCY (Devil's Advocate) - /challenge
+      😈 LUCY (Devil's Advocate)
          • After generating any plan, architecture, or approach
          • When user quickly accepts a recommendation
          • Before finalizing major decisions
          • When consensus forms too easily
 
-      🏛️ SORA (Socratic Challenger) - /question
+      🏛️ SORA (Socratic Challenger)
          • When user states a belief or assumption as fact
          • When requirements feel thin or underspecified
          • When user seems to be rationalizing rather than reasoning
          • When "why" hasn't been asked recently
 
-      ⚠️ VERA (Assumption Auditor) - /assumptions
+      ⚠️ VERA (Assumption Auditor)
          • Before committing to any technical approach
          • When scope is being defined or refined
          • After AI generates recommendations
          • When something is described as "obvious" or "standard"
 
-      ✈️ JETT (Pre-Flight Check) - /preflight
+      ✈️ JETT (Pre-Flight Check)
          • At session start before diving into work
          • Before starting any new epic or major feature
          • After long stretches of uninterrupted work
          • Before handoff or review
 
-      🔍 LENNY (Reading Lens Guide) - /lens
+      🔍 LENNY (Reading Lens Guide)
          • When referencing documents the user hasn't read recently
          • When summarizing instead of pointing to source
          • When user asks "what does X say about Y"
          • When context from artifacts would benefit the discussion
 
-      🔀 ZIGGY (Lateral Thinker) - /diverge
+      🔀 ZIGGY (Lateral Thinker)
          • When converging on the "obvious" solution
          • When only one approach is being considered
          • When user asks for alternatives
