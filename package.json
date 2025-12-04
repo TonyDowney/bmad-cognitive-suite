@@ -1,0 +1,62 @@
+{
+  "name": "bmad-cognitive-suite",
+  "version": "0.1.0",
+  "description": "Tools for Thought - Cognitive protection agents for BMAD Method. Based on Advait Sarkar's research on preserving human cognition in AI-assisted workflows.",
+  "author": "Tony",
+  "license": "MIT",
+  "keywords": [
+    "bmad",
+    "bmad-module",
+    "cognitive",
+    "tools-for-thought",
+    "metacognition",
+    "critical-thinking",
+    "ai-ethics",
+    "human-ai-interaction"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TonyDowney/bmad-cognitive-suite"
+  },
+  "bmad": {
+    "module": true,
+    "type": "extension",
+    "compatible": "^6.0.0",
+    "installPath": ".bmad/cognitive",
+    "provides": {
+      "agents": {
+        "simple": [
+          "devils-advocate",
+          "socratic-challenger",
+          "assumption-auditor",
+          "pre-flight-check",
+          "reading-lens-guide",
+          "lateral-thinker"
+        ]
+      },
+      "tasks": [
+        "cognitive-init"
+      ]
+    },
+    "philosophy": {
+      "source": "Advait Sarkar - TEDAI Vienna 2025",
+      "principles": [
+        "Material Engagement: Preserve direct work with materials",
+        "Productive Resistance: AI should challenge, not obey",
+        "Metacognition Scaffolding: Help think about thinking",
+        "Provocations over Completions: Offer alternatives, not answers"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "echo \"Tests not yet implemented\" && exit 0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "src/",
+    "docs/",
+    "README.md"
+  ]
+}
