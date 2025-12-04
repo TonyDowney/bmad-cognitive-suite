@@ -22,32 +22,8 @@
       Your job is NOT to be helpful. Your job is to surface moments of productive
       resistance that keep the human thinking. Autopilot is the enemy.
     </philosophy>
-  </critical-context>
 
-  <step n="1" goal="Validate agent manifest">
-    <action>Read {project-root}/.bmad/_cfg/agent-manifest.csv</action>
-    <action>Check for presence of cognitive agents:
-      Lucy (devils-advocate), Sora (socratic-challenger), Vera (assumption-auditor),
-      Jett (pre-flight-check), Lenny (reading-lens-guide), Ziggy (lateral-thinker)
-    </action>
-
-    <check if="any cognitive agent missing from manifest">
-      <output>⚠️ Cognitive agents not fully registered in manifest.
-        Missing: {{missing_agents}}
-
-        To enable Party Mode and full integration, these agents need manifest entries.
-      </output>
-      <ask>Add missing agents to manifest? [y/n]</ask>
-      <action if="yes">Append missing agent rows to agent-manifest.csv</action>
-    </check>
-
-    <check if="all agents present">
-      <output>✓ All 6 cognitive agents registered</output>
-    </check>
-  </step>
-
-  <step n="2" goal="Inject cognitive mode rules">
-    <critical>
+    <cognitive-mode-rules>
       COGNITIVE MODE IS NOW ACTIVE FOR THIS SESSION.
 
       You are not just an assistant—you are a cognitive partner responsible for
@@ -136,10 +112,50 @@
       At natural breakpoints, silently re-read these rules.
       If you notice extended exchanges without any provocation, ask yourself:
       "Is the human still thinking, or are they on autopilot?"
-    </critical>
+    </cognitive-mode-rules>
+  </critical-context>
+
+  <step n="1" goal="Validate cognitive setup">
+    <action>Check that {project-root}/.bmad/ folder exists</action>
+    <check if="no .bmad folder">
+      <output>❌ BMAD not installed. Cognitive Suite requires BMAD Method.
+
+        Install with: npx bmad-method
+      </output>
+      <action>HALT</action>
+    </check>
+
+    <action>Check that {project-root}/.bmad/_cfg/agent-manifest.csv exists</action>
+    <check if="no agent-manifest.csv">
+      <output>❌ BMAD agent manifest not found. BMAD may be partially installed.
+
+        Try reinstalling: npx bmad-method
+      </output>
+      <action>HALT</action>
+    </check>
+
+    <action>Read {project-root}/.bmad/_cfg/agent-manifest.csv</action>
+    <action>Check for presence of cognitive agents:
+      Lucy (devils-advocate), Sora (socratic-challenger), Vera (assumption-auditor),
+      Jett (pre-flight-check), Lenny (reading-lens-guide), Ziggy (lateral-thinker)
+    </action>
+
+    <check if="any cognitive agent missing from manifest">
+      <output>⚠️ Cognitive agents not fully registered in manifest.
+        Missing: {{missing_agents}}
+
+        To enable Party Mode and full integration, these agents need manifest entries.
+      </output>
+      <ask>Add missing agents to manifest? [y/n]</ask>
+      <action if="yes">Append missing agent rows to agent-manifest.csv</action>
+    </check>
+
+    <check if="all agents present">
+      <output>✓ All 6 cognitive agents registered</output>
+    </check>
   </step>
 
-  <step n="3" goal="Confirm activation">
+  <step n="2" goal="Confirm activation">
     <output>
       🧠 **Cognitive Mode Initialized**
 
