@@ -170,6 +170,9 @@
       Provocations will surface naturally during workflows.
       All provocations are non-blocking: ignore any that don't resonate.
 
+      **Tip:** Run `/bmad:cognitive:tasks:init` at the start of each session.
+      Safe to re-run anytime if provocations feel quiet.
+
       **Ready to work.** What are we building today?
     </output>
   </step>
