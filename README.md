@@ -8,18 +8,45 @@ AI agents that challenge you to think, not think for you.
 
 **Requires:** [BMAD Method v6](https://github.com/bmadcode/bmad-method)
 
+### 1. Install BMAD Method
+
 ```bash
-# 1. Ensure BMAD v6 is installed in your project
 npx bmad-method
+```
 
-# 2. Install Cognitive Suite (coming soon - for now, copy src/ contents)
-# npx bmad-cognitive-suite
+### 2. Install Cognitive Suite
 
-# 3. Activate cognitive mode at session start
+Clone and copy the source files to your project:
+
+```bash
+# Clone the repo
+git clone https://github.com/TonyDowney/bmad-cognitive-suite.git
+
+# Create cognitive folder
+mkdir -p .bmad/cognitive
+
+# Copy agents and tasks
+cp -r bmad-cognitive-suite/src/agents .bmad/cognitive/
+cp -r bmad-cognitive-suite/src/tasks .bmad/cognitive/
+
+# Copy slash commands
+mkdir -p .claude/commands/bmad/cognitive
+cp -r bmad-cognitive-suite/src/commands/* .claude/commands/bmad/cognitive/
+
+# Clean up
+rm -rf bmad-cognitive-suite
+```
+
+### 3. Activate Cognitive Mode
+
+Run at the start of each Claude Code session:
+
+```
 /bmad:cognitive:tasks:init
 ```
 
-Run `/bmad:cognitive:tasks:init` at any time to enter cognitive mode.
+This validates your setup and activates ambient provocation for the session.
+Safe to re-run anytime.
 
 ## What This Is
 
